@@ -1,0 +1,170 @@
+*
+    margin: 0
+    padding: 0
+    font-family: 'Montserrat', sans-serif
+.header
+    &__logo
+        &-wrapper
+            display: flex
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            span
+                font-size: 100px
+                font-weight: 500
+            &_numbers
+                display: flex
+                align-items: center
+                justify-content: space-between
+                img
+                    max-width: 200px
+                div
+                    display: flex
+                    flex-direction: column
+                    a
+                        color: #000 !important
+                        transition: 1s all
+                        text-decoration: none !important
+                        font-size: 30px
+                        &:hover
+                            transform: scale(1.05)
+.modal
+    display: none
+    position: fixed
+    z-index: 9999
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    padding: 50px
+    background: #ffffffe7
+    border-radius: 30px
+    form
+        display: flex
+        flex-direction: column
+        span
+            margin-bottom: 30px
+            font-size: 20px
+            text-align: center
+        input
+            height: 50px
+            padding: 20px
+            font-size: 23px
+            margin-bottom: 30px
+            border-radius: 30px
+            border: none
+        button
+            width: 100%
+            border: none
+            font-weight: 800
+            font-size: 25px
+            height: 60px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 30px
+            box-shadow: 3px 3px #0000003b
+            background: rgb(238,174,202)
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)
+            transition: 0.5s all
+            cursor: pointer
+            font-weight: 500
+            margin: 15px auto
+            &:hover
+                transform: scale(0.95)
+        .close
+            position: absolute
+            right: 0
+            top: 10px
+            width: 30px
+            height: 30px
+            transition: 0.5s all
+            cursor: pointer
+            &:hover
+                transform: scale(1.1)
+            &:before
+                content: ''
+                display: block
+                width: 3px
+                height: 100%
+                background-color: #000
+                border-radius: 30px
+                transform: rotate(45deg)
+                position: absolute
+            &:after
+                content: ''
+                display: block
+                width: 3px
+                height: 100%
+                background-color: #000
+                border-radius: 30px
+                transform: rotate(-45deg)
+                position: absolute
+
+                
+
+.info
+    padding: 30px 0 0 0
+    line-height: 30px
+    font-size: 25px
+    text-align: center
+.main
+    background: rgb(124,121,175)
+    background: linear-gradient(90deg, rgba(124,121,175,1) 0%, rgba(17,33,122,1) 52%, rgba(13,13,70,1) 100%)
+    &__item
+        display: flex
+        flex-direction: column
+        margin: 15px 0
+        img
+            height: 300px
+            border-radius: 30px 30px 0 0
+        &-wrapper
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 30px
+            background: #ffffff52
+            border-radius: 0 0 30px 30px
+            &_descr
+                line-height: 25px
+            .btn
+                width: 200px
+                height: 60px
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 30px
+                box-shadow: 3px 3px #0000003b
+                background: rgb(238,174,202)
+                background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)
+                transition: 0.5s all
+                cursor: pointer
+                font-weight: 500
+                &:hover
+                    transform: scale(0.95)
+.footer
+    &__button
+        max-width: 500px
+        height: 60px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 30px
+        box-shadow: 3px 3px #0000003b
+        background: rgb(238,174,202)
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)
+        transition: 0.5s all
+        cursor: pointer
+        font-weight: 500
+        margin: 15px auto
+        &:hover
+            transform: scale(0.95)
+.bg
+    display: none
+    background: #000000ad
+    position: fixed
+    width: 100%
+    height: 100%
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    z-index: 9998

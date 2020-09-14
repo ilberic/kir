@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.header__logo-wrapper span {
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.header__logo-wrapper_numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo-wrapper_numbers img {
+  max-width: 200px;
+}
+
+.header__logo-wrapper_numbers div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__logo-wrapper_numbers div a {
+  color: #000 !important;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  text-decoration: none !important;
+  font-size: 30px;
+}
+
+.header__logo-wrapper_numbers div a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 50px;
+  background: #ffffffe7;
+  border-radius: 30px;
+}
+
+.modal form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal form span {
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal form input {
+  height: 50px;
+  padding: 20px;
+  font-size: 23px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+.modal form button {
+  width: 100%;
+  border: none;
+  font-weight: 800;
+  font-size: 25px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px #0000003b;
+          box-shadow: 3px 3px #0000003b;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 15px auto;
+}
+
+.modal form button:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.modal form .close {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.modal form .close:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.modal form .close:before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: #000;
+  border-radius: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+}
+
+.modal form .close:after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: #000;
+  border-radius: 30px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+}
+
+.info {
+  padding: 30px 0 0 0;
+  line-height: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.main {
+  background: #7c79af;
+  background: -webkit-gradient(linear, left top, right top, from(#7c79af), color-stop(52%, #11217a), to(#0d0d46));
+  background: linear-gradient(90deg, #7c79af 0%, #11217a 52%, #0d0d46 100%);
+}
+
+.main__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px 0;
+}
+
+.main__item img {
+  height: 300px;
+  border-radius: 30px 30px 0 0;
+}
+
+.main__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px;
+  background: #ffffff52;
+  border-radius: 0 0 30px 30px;
+}
+
+.main__item-wrapper_descr {
+  line-height: 25px;
+}
+
+.main__item-wrapper .btn {
+  width: 200px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px #0000003b;
+          box-shadow: 3px 3px #0000003b;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.main__item-wrapper .btn:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.footer__button {
+  max-width: 500px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px #0000003b;
+          box-shadow: 3px 3px #0000003b;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 15px auto;
+}
+
+.footer__button:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.bg {
+  display: none;
+  background: #000000ad;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9998;
+}
